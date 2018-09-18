@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BilletLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:BilletLibrary.Bil">
+            <summary>
+            Bil klasse med 2 properties, en default constructor og 2 metoder
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.Bil.Pris">
+            <summary>
+            Denne metode returnerer bilens pris
+            </summary>
+            <returns>Returnerer en type double som er 240</returns>
+        </member>
+        <member name="M:BilletLibrary.Bil.Køretøj">
+            <summary>
+            Denne metode returnerer hvilket køretøj
+            </summary>
+            <returns>Returnerer en type string som er bil</returns>
+        </member>
+    </members>
+</doc>
