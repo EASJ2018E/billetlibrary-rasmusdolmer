@@ -9,64 +9,71 @@
             Bil klasse med 2 properties, en default constructor og 2 metoder
             </summary>
         </member>
-        <member name="P:BilletLibrary.Bil.Nummerplade">
+        <member name="M:BilletLibrary.Bil.#ctor(System.String,System.DateTime)">
             <summary>
-            String property til nummerplade med get set
-            </summary>
-        </member>
-        <member name="P:BilletLibrary.Bil.Dato">
-            <summary>
-            DateTime property til dato med get set
-            </summary>
-        </member>
-        <member name="M:BilletLibrary.Bil.#ctor">
-            <summary>
-            Default constructor
+            Constructor med parametre fra base klassen køretøj
             </summary>
         </member>
         <member name="M:BilletLibrary.Bil.Pris">
             <summary>
-            Denne metode returnerer bilens pris
+            Denne metode returnerer bilens pris. Metoden ligger i klassen køretøj og bliver heri overridet
             </summary>
             <returns>Returnerer en variabel af typen double som er 240</returns>
         </member>
-        <member name="M:BilletLibrary.Bil.Køretøj">
+        <member name="M:BilletLibrary.Bil.Køretøjet">
+            <summary>
+            Denne metode returnerer hvilket køretøj. Metoden ligger i klassen køretøj og bliver heri overridet
+            </summary>
+            <returns>Returnerer en variabel af typen string som er Bil</returns>
+        </member>
+        <member name="P:BilletLibrary.Køretøj.Nummerplade">
+            <summary>
+            String property til nummerplade med get set
+            </summary>
+        </member>
+        <member name="P:BilletLibrary.Køretøj.Dato">
+            <summary>
+            DateTime property til dato med get set
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.Køretøj.#ctor(System.String,System.DateTime)">
+            <summary>
+            Constructor med 2 parametre
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.Køretøj.Pris">
+            <summary>
+            Denne metode returnerer MC'ens pris
+            </summary>
+            <returns>Returnerer en variabel af typen double som er 125</returns>
+        </member>
+        <member name="M:BilletLibrary.Køretøj.Køretøjet">
             <summary>
             Denne metode returnerer hvilket køretøj
             </summary>
-            <returns>Returnerer en variabel af typen string som er Bil</returns>
+            <returns>Returnerer en variabel af typen string som er MC</returns>
         </member>
         <member name="T:BilletLibrary.MC">
             <summary>
             MC klasse med 2 properties, en default constructor og 2 metoder
             </summary>
         </member>
-        <member name="P:BilletLibrary.MC.Nummerplade">
+        <member name="M:BilletLibrary.MC.#ctor(System.String,System.DateTime)">
             <summary>
-            String property til nummerplade med get set
-            </summary>
-        </member>
-        <member name="P:BilletLibrary.MC.Dato">
-            <summary>
-            DateTime property til dato med get set
-            </summary>
-        </member>
-        <member name="M:BilletLibrary.MC.#ctor">
-            <summary>
-            Default constructor
+            Constructor med parametre fra base klassen køretøj
             </summary>
         </member>
         <member name="M:BilletLibrary.MC.Pris">
             <summary>
-            Denne metode returnerer MC'ens pris
+            Denne metode returnerer bilens pris. Metoden ligger i klassen køretøj og bliver heri overridet
             </summary>
-            <returns>Returnerer en variabel af typen double som er 125</returns>
+            <returns>Returnerer en variabel af typen double som er 240</returns>
         </member>
-        <member name="M:BilletLibrary.MC.Køretøj">
+        <member name="M:BilletLibrary.MC.Køretøjet">
             <summary>
-            Denne metode returnerer hvilket køretøj
+            Denne metode returnerer hvilket køretøj. Metoden ligger i klassen køretøj og bliver heri overridet
             </summary>
-            <returns>Returnerer en variabel af typen string som er MC</returns>
+            <returns>Returnerer en variabel af typen string som er Bil</returns>
         </member>
     </members>
 </doc>

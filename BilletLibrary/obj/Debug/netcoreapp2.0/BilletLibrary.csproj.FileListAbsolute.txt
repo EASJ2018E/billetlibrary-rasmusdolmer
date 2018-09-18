@@ -7,3 +7,4 @@ C:\source\billetlibrary-rasmusdolmer\BilletLibrary\obj\Debug\netcoreapp2.0\Bille
 C:\source\billetlibrary-rasmusdolmer\BilletLibrary\obj\Debug\netcoreapp2.0\BilletLibrary.AssemblyInfo.cs
 C:\source\billetlibrary-rasmusdolmer\BilletLibrary\obj\Debug\netcoreapp2.0\BilletLibrary.dll
 C:\source\billetlibrary-rasmusdolmer\BilletLibrary\obj\Debug\netcoreapp2.0\BilletLibrary.pdb
+C:\source\billetlibrary-rasmusdolmer\BilletLibrary\obj\Debug\netcoreapp2.0\BilletLibrary.csprojResolveAssemblyReference.cache

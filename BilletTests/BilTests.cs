@@ -1,3 +1,4 @@
+using System;
 using BilletLibrary;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
@@ -10,7 +11,7 @@ namespace BilletTests
         public void TestBilPris()
         {
             //arrange
-            Bil b1 = new Bil();
+            Bil b1 = new Bil("aa12345",DateTime.Now);
 
             //act
             double result = b1.Pris();
@@ -23,10 +24,10 @@ namespace BilletTests
         public void TestBilKøretøj()
         {
             //arrange
-            Bil b2 = new Bil();
+            Bil b2 = new Bil("aa12345", DateTime.Now);
 
             //act
-            string result = b2.Køretøj();
+            string result = b2.Køretøjet();
 
             //assert
             Assert.AreEqual("Bil", result);
@@ -36,7 +37,7 @@ namespace BilletTests
         public void TestMCPris()
         {
             //arrange
-            MC mc = new MC();
+            MC mc = new MC("aa12345", DateTime.Now);
 
             //act
             double result = mc.Pris();
@@ -49,13 +50,13 @@ namespace BilletTests
         public void TestMCKøretøj()
         {
             //arrange
-            MC mc = new MC();
+            MC mc = new MC("aa12345", DateTime.Now);
 
             //act
-            double result = mc.Pris();
+            string result = mc.Køretøjet();
 
             //assert
-            Assert.AreEqual(125, result);
+            Assert.AreEqual("MC", result);
         }
     }
 }
