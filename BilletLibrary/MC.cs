@@ -1,11 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace BilletLibrary
 {
     /// <summary>
-    /// Bil klasse med 2 properties, en default constructor og 2 metoder
+    /// MC klasse med 2 properties, en default constructor og 2 metoder
     /// </summary>
-    public class Bil
+    public class MC
     {
         /// <summary>
         /// String property til nummerplade med get set
@@ -19,27 +21,27 @@ namespace BilletLibrary
         /// <summary>
         /// Default constructor
         /// </summary>
-        public Bil()
+        public MC()
         {
-            
+
         }
 
         /// <summary>
-        /// Denne metode returnerer bilens pris
+        /// Denne metode returnerer MC'ens pris
         /// </summary>
-        /// <returns>Returnerer en variabel af typen double som er 240</returns>
+        /// <returns>Returnerer en variabel af typen double som er 125</returns>
         public double Pris()
         {
-            return 240;
+            return 125;
         }
 
         /// <summary>
         /// Denne metode returnerer hvilket køretøj
         /// </summary>
-        /// <returns>Returnerer en variabel af typen string som er Bil</returns>
+        /// <returns>Returnerer en variabel af typen string som er MC</returns>
         public string Køretøj()
         {
-            return "Bil";
+            return "MC";
         }
     }
 }

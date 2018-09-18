@@ -31,5 +31,31 @@ namespace BilletTests
             //assert
             Assert.AreEqual("Bil", result);
         }
+
+        [TestMethod]
+        public void TestMCPris()
+        {
+            //arrange
+            MC mc = new MC();
+
+            //act
+            double result = mc.Pris();
+
+            //assert
+            Assert.AreEqual(125, result);
+        }
+
+        [TestMethod]
+        public void TestMCKøretøj()
+        {
+            //arrange
+            MC mc = new MC();
+
+            //act
+            double result = mc.Pris();
+
+            //assert
+            Assert.AreEqual(125, result);
+        }
     }
 }
