@@ -9,7 +9,7 @@
             Bil klasse med 2 properties, en default constructor og 2 metoder
             </summary>
         </member>
-        <member name="M:BilletLibrary.Bil.#ctor(System.String,System.DateTime)">
+        <member name="M:BilletLibrary.Bil.#ctor(System.String,System.DateTime,System.Boolean)">
             <summary>
             Constructor med parametre fra base klassen køretøj
             </summary>
@@ -41,7 +41,12 @@
             DateTime property til dato med get set
             </summary>
         </member>
-        <member name="M:BilletLibrary.Køretøj.#ctor(System.String,System.DateTime)">
+        <member name="P:BilletLibrary.Køretøj.Brobizz">
+            <summary>
+            Bool property til brobizz med get set
+            </summary>
+        </member>
+        <member name="M:BilletLibrary.Køretøj.#ctor(System.String,System.DateTime,System.Boolean)">
             <summary>
             Constructor med 2 parametre
             </summary>
@@ -63,7 +68,7 @@
             MC klasse med 2 properties, en default constructor og 2 metoder
             </summary>
         </member>
-        <member name="M:BilletLibrary.MC.#ctor(System.String,System.DateTime)">
+        <member name="M:BilletLibrary.MC.#ctor(System.String,System.DateTime,System.Boolean)">
             <summary>
             Constructor med parametre fra base klassen køretøj
             </summary>

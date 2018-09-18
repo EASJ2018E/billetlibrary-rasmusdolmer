@@ -9,14 +9,15 @@ namespace BilletLibrary
     /// </summary>
     public class MC : Køretøj
     {
-      
+
         /// <summary>
         /// Constructor med parametre fra base klassen køretøj
         /// </summary>
-        public MC(string nummerplade, DateTime dato) : base (nummerplade, dato)
+        public MC(string nummerplade, DateTime dato, bool brobizz) : base(nummerplade, dato, brobizz)
         {
             this.Nummerplade = nummerplade;
             this.Dato = dato;
+            this.Brobizz = brobizz;
         }
 
         /// <summary>
@@ -25,6 +26,10 @@ namespace BilletLibrary
         /// <returns>Returnerer en variabel af typen double som er 240</returns>
         public override double Pris()
         {
+            if (Brobizz)
+            {
+                return 125*0.95;
+            }
             return 125;
         }
 

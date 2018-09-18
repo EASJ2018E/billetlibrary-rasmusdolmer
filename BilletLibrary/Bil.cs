@@ -11,10 +11,11 @@ namespace BilletLibrary
         /// <summary>
         /// Constructor med parametre fra base klassen køretøj
         /// </summary>
-        public Bil(string nummerplade, DateTime dato) : base(nummerplade, dato)
+        public Bil(string nummerplade, DateTime dato, bool brobizz) : base(nummerplade, dato, brobizz)
         {
             this.Nummerplade = nummerplade;
             this.Dato = dato;
+            this.Brobizz = brobizz;
         }
 
         /// <summary>
@@ -23,6 +24,10 @@ namespace BilletLibrary
         /// <returns>Returnerer en variabel af typen double som er 240</returns>
         public override double Pris()
         {
+            if (Brobizz)
+            {
+                return 240 * 0.95;
+            }
             return 240;
         }
 

@@ -20,9 +20,14 @@ namespace BilletLibrary
         public DateTime Dato { get; set; }
 
         /// <summary>
+        /// Bool property til brobizz med get set
+        /// </summary>
+        public bool Brobizz { get; set; }
+
+        /// <summary>
         /// Constructor med 2 parametre
         /// </summary>
-        protected Køretøj(string nummerplade, DateTime dato)
+        protected Køretøj(string nummerplade, DateTime dato, bool brobizz)
         {
             if (nummerplade.Length > 7)
             {
@@ -30,6 +35,7 @@ namespace BilletLibrary
             }
             Nummerplade = nummerplade;
             Dato = dato;
+            Brobizz = brobizz;
         }
 
         /// <summary>

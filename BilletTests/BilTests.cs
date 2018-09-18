@@ -11,20 +11,20 @@ namespace BilletTests
         public void TestBilPris()
         {
             //arrange
-            Bil b1 = new Bil("aa12345",DateTime.Now);
+            Bil b1 = new Bil("aa12345",DateTime.Now, true);
 
             //act
             double result = b1.Pris();
 
             //assert
-            Assert.AreEqual(240, result);
+            Assert.AreEqual(228, result);
         }
 
         [TestMethod]
         public void TestBilKøretøj()
         {
             //arrange
-            Bil b2 = new Bil("aa123456", DateTime.Now);
+            Bil b2 = new Bil("aa12345", DateTime.Now, true);
 
             //act
             string result = b2.Køretøjet();
@@ -37,7 +37,7 @@ namespace BilletTests
         public void TestMCPris()
         {
             //arrange
-            MC mc = new MC("aa12345", DateTime.Now);
+            MC mc = new MC("aa12345", DateTime.Now, false);
 
             //act
             double result = mc.Pris();
@@ -50,7 +50,7 @@ namespace BilletTests
         public void TestMCKøretøj()
         {
             //arrange
-            MC mc = new MC("aa12345", DateTime.Now);
+            MC mc = new MC("aa12345", DateTime.Now, false);
 
             //act
             string result = mc.Køretøjet();
