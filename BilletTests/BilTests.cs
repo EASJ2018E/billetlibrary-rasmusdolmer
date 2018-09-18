@@ -24,7 +24,7 @@ namespace BilletTests
         public void TestBilKøretøj()
         {
             //arrange
-            Bil b2 = new Bil("aa12345", DateTime.Now);
+            Bil b2 = new Bil("aa123456", DateTime.Now);
 
             //act
             string result = b2.Køretøjet();

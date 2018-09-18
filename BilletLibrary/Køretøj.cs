@@ -4,6 +4,9 @@ using System.Text;
 
 namespace BilletLibrary
 {
+    /// <summary>
+    /// Dette er base klassen køretøj. Klasser som bil og MC arver fra denne klasse
+    /// </summary>
     public abstract class Køretøj
     {
         /// <summary>
@@ -21,6 +24,10 @@ namespace BilletLibrary
         /// </summary>
         protected Køretøj(string nummerplade, DateTime dato)
         {
+            if (nummerplade.Length > 7)
+            {
+                throw new Exception("Du har indtastet en nummerplade på mere end 7 tegn. Prøv igen..");
+            }
             Nummerplade = nummerplade;
             Dato = dato;
         }

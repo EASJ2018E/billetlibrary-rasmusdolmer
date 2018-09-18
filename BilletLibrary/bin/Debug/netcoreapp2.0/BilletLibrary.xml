@@ -26,6 +26,11 @@
             </summary>
             <returns>Returnerer en variabel af typen string som er Bil</returns>
         </member>
+        <member name="T:BilletLibrary.Køretøj">
+            <summary>
+            Dette er base klassen køretøj. Klasser som bil og MC arver fra denne klasse
+            </summary>
+        </member>
         <member name="P:BilletLibrary.Køretøj.Nummerplade">
             <summary>
             String property til nummerplade med get set
